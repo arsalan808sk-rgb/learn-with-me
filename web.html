@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NayyaTorrent Movies</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f1116;
+      color: #eee;
+    }
+    header {
+      background: #14171f;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #2a2f3a;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+    header nav a {
+      color: #cfd8ff;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+    .hero {
+      padding: 40px 24px 24px;
+      background: linear-gradient(180deg, rgba(22,25,33,0.95) 0%, rgba(15,17,22,1) 100%);
+    }
+    .hero h2 {
+      margin: 0 0 12px;
+      font-size: 34px;
+      line-height: 1.1;
+    }
+    .hero p {
+      margin: 0;
+      color: #aab2d6;
+      max-width: 640px;
+      font-size: 16px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px;
+      padding: 24px;
+    }
+    .card {
+      background: #161b24;
+      border: 1px solid #252b36;
+      border-radius: 14px;
+      overflow: hidden;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #3b6cff;
+    }
+    .card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+    .card-content {
+      padding: 16px;
+    }
+    .card-title {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+    .card-meta {
+      font-size: 13px;
+      color: #99a5c7;
+      margin-bottom: 14px;
+    }
+    .card button,
+    .card-actions a {
+      width: 100%;
+      padding: 10px 0;
+      font-size: 14px;
+      color: #fff;
+      background: #3b6cff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      display: inline-flex;
+      justify-content: center;
+      text-decoration: none;
+    }
+    footer {
+      padding: 18px 24px;
+      text-align: center;
+      color: #8f99b8;
+      font-size: 13px;
+      border-top: 1px solid #2a2f3a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NayyaTorrent Movies</h1>
+    <nav>
+      <a href="#trending">Trending</a>
+      <a href="#new">New</a>
+      <a href="#top">Top</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+      <h2>Stream movies and shows with NayyaTorrent.</h2>
+      <p>Browse a curated selection of films, series, and new releases. Click any title to view details and start watching instantly via NayyaTorrent.</p>
+
+  <section class="grid" id="trending">
+    <article class="card">
+      <img src="https://via.placeholder.com/400x280?text=Movie+1" alt="Movie 1">
+      <div class="card-content">
+        <h3 class="card-title">Nightfall Echo</h3>
+        <div class="card-meta">Action • 2025 • 2h 10m</div>
+        <button>Watch Now</button>
+      </div>
+    </article>
+    <article class="card">
+      <img src="https://via.placeholder.com/400x280?text=Movie+2" alt="Movie 2">
+      <div class="card-content">
+        <h3 class="card-title">Solar Drift</h3>
+        <div class="card-meta">Sci-Fi • 2024 • 1h 54m</div>
+        <button>Watch Now</button>
+      </div>
+    </article>
+    <article class="card">
+      <img src="https://via.placeholder.com/400x280?text=Movie+3" alt="Movie 3">
+      <div class="card-content">
+        <h3 class="card-title">Midnight Secrets</h3>
+        <div class="card-meta">Thriller • 2025 • 1h 47m</div>
+        <div class="card-actions">
+          <a href="https://nayyatorent/watch/midnight-secrets" target="_blank" rel="noopener">Watch</a>
+        </div>
+      </div>
+    </article>
+    <article class="card">
+      <img src="https://via.placeholder.com/400x280?text=Movie+4" alt="Movie 4">
+      <div class="card-content">
+        <h3 class="card-title">River of Stars</h3>
+        <div class="card-meta">Drama • 2024 • 2h 3m</div>
+        <div class="card-actions">
+          <a href="https://nayyatorent/watch/river-of-stars" target="_blank" rel="noopener">Watch</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    NayyaTorrent Movies prototype. Designed for browsing and discovery.
+  </footer>
+</body>
+</html>
